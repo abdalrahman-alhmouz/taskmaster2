@@ -16,7 +16,6 @@ public class AllTasks extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 //        ActionBar actionBar = getActionBar();
-//        actionBar.setDisplayHomeAsUpEnabled(true);
     }
     public boolean onOptionsItemSelected(MenuItem item){
         Intent mtIntent = new Intent(getApplicationContext(), MainActivity.class);
