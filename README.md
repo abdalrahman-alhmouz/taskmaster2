@@ -1,19 +1,15 @@
 # taskmaster
 
 Layering Layers On Home Page (Text and Buttons)
- * create AddTask class and AddTask activites then Layering Layers On AddTask Page (Text and Buttons) 
- Associate the (Add task) button with the Add task page .
+ * Create a Task class. A Task should have a title, a body, and a state. The state should be one of “new”, “assigned”, “in progress”, or “complete”.
 
- * create AllTask class and AllTask activites then Layering Layers On AllTask Page (Text) 
- Associate the (All  task) button with the Alltask page .
+ * Refactor your homepage to use a RecyclerView for displaying Task data. This should have hardcoded Task data for now.
  
- * create DetailTask class and DetailTask activites then Layering Layers On main Page (Text) 
- Associate the Three button with the DetailTask page .
+ * Create a ViewAdapter class that displays data from a list of Tasks
+ * 
+ * create three  Task instances and use those to populate your RecyclerView/ViewAdapter. 
 
- * create Three button with different name , each button will display different title . 
-
- * create SettingPage class and SettingPage activites then Layering Layers On SettingPage Page (Text and Button) 
- Associate the (saveName) button with the main page with userName .
+ 
 
  ![homePage](https://raw.githubusercontent.com/abdalrahman-alhmouz/taskmaster/lab27/img/homePage.PNG)
  ![task1](https://raw.githubusercontent.com/abdalrahman-alhmouz/taskmaster/lab27/img/task1.PNG)
