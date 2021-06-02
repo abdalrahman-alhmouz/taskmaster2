@@ -11,7 +11,5 @@ Layering Layers On Home Page (Text and Buttons)
 
  
 
- ![homePage](https://raw.githubusercontent.com/abdalrahman-alhmouz/taskmaster/lab27/img/homePage.PNG)
- ![task1](https://raw.githubusercontent.com/abdalrahman-alhmouz/taskmaster/lab27/img/task1.PNG)
- ![task2](https://raw.githubusercontent.com/abdalrahman-alhmouz/taskmaster/lab27/img/task2.PNG)
- ![task3](https://raw.githubusercontent.com/abdalrahman-alhmouz/taskmaster/lab27/img/task3.PNG)
+ ![homePage](img/lab28.PNG)
+
