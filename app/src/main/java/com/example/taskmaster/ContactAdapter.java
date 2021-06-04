@@ -12,16 +12,16 @@ import java.util.ArrayList;
 
 public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.TaskViewHolder> {
 
-    public ArrayList<Task> task;
+    public ArrayList<TaskTable> taskTable;
     public OnInteractingWithTaskListener listener;
 
-    public ContactAdapter(ArrayList<Task> task, OnInteractingWithTaskListener listener) {
-        this.task = task;
+    public ContactAdapter(ArrayList<TaskTable> taskTable, OnInteractingWithTaskListener listener) {
+        this.taskTable = taskTable;
         this.listener = listener;
     }
 
     public static class TaskViewHolder extends RecyclerView.ViewHolder {
-        public Task task;
+        public TaskTable taskTable;
         public View itemView;
 
         public TaskViewHolder(@NonNull View itemView) {
@@ -43,8 +43,8 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.TaskView
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    System.out.println(" this is the task title on click " + viewHolder.task.title);
-                    listener.taskListener(viewHolder.task);
+                    System.out.println(" this is the task title on click " + viewHolder.taskTable.title);
+                    listener.taskListener(viewHolder.taskTable);
                 }
             });
 
@@ -52,26 +52,26 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.TaskView
     }
 
     public static interface OnInteractingWithTaskListener{
-        public void taskListener(Task task);
+        public void taskListener(TaskTable taskTable);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ContactAdapter.TaskViewHolder holder, int position) {
-        holder.task = task.get(position);
+        holder.taskTable = taskTable.get(position);
 
         TextView titleTextView = holder.itemView.findViewById(R.id.titleView);
         TextView bodyTextView = holder.itemView.findViewById(R.id.bodyView);
         TextView stateTextView = holder.itemView.findViewById(R.id.stateView);
-        titleTextView.setText(holder.task.title);
-        bodyTextView.setText(holder.task.body);
-        stateTextView.setText(holder.task.state);
+        titleTextView.setText(holder.taskTable.title);
+        bodyTextView.setText(holder.taskTable.body);
+        stateTextView.setText(holder.taskTable.state);
 
 
     }
 
     @Override
     public int getItemCount() {
-        return task.size();
+        return taskTable.size();
     }
 
 

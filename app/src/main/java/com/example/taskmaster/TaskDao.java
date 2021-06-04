@@ -11,13 +11,13 @@ import java.util.List;
 public interface TaskDao {
 
     @Insert
-    public void saveTask(Task task);
+    public void saveTask(TaskTable taskTable);
 
     @Query("SELECT * FROM Task")
-    public List<Task> getAllTasks();
+    public List<TaskTable> getAllTasks();
 
     @Query("SELECT * FROM Task ORDER BY id DESC")
-    public List<Task> getAllTasksReversed();
+    public List<TaskTable> getAllTasksReversed();
 
 
 
