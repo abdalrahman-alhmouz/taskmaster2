@@ -15,6 +15,7 @@ public class AllTasks extends AppCompatActivity {
         setContentView(R.layout.activity_alltasks);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
     public boolean onOptionsItemSelected(MenuItem item){
         Intent mtIntent = new Intent(getApplicationContext(), MainActivity.class);

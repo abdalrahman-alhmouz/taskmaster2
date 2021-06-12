@@ -1,0 +1,37 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-taskmaster2-dev-114956-authRole",
+      "UnauthRoleArn": "arn:aws:iam::674562917886:role/amplify-taskmaster2-dev-114956-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::674562917886:role/amplify-taskmaster2-dev-114956-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-taskmaster2-dev-114956-deployment",
+      "UnauthRoleName": "amplify-taskmaster2-dev-114956-unauthRole",
+      "StackName": "amplify-taskmaster2-dev-114956",
+      "StackId": "arn:aws:cloudformation:us-east-1:674562917886:stack/amplify-taskmaster2-dev-114956/5a2ae890-c2b6-11eb-ba55-0ef585e93a5f",
+      "AmplifyAppId": "d1pzw9lgc5fe09"
+    }
+  },
+  "auth": {
+    "taskmaster20b8b56fc": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "us-east-1_argxJtRc5",
+        "AppClientIDWeb": "6j74fts3c65hutfgjm16s4846q",
+        "AppClientID": "5ub5tq59ck0viuqssobck6je7f",
+        "IdentityPoolId": "us-east-1:f2e84aaa-1094-4d15-849d-d74702590d93",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:674562917886:userpool/us-east-1_argxJtRc5",
+        "IdentityPoolName": "taskmaster20b8b56fc_identitypool_0b8b56fc__dev",
+        "UserPoolName": "taskmaster20b8b56fc_userpool_0b8b56fc"
+      },
+      "lastPushTimeStamp": "2021-06-01T09:28:33.011Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-taskmaster2-dev-114956-deployment/amplify-cfn-templates/auth/taskmaster20b8b56fc-cloudformation-template.yml",
+        "logicalId": "authtaskmaster20b8b56fc"
+      }
+    }
+  }
+}
